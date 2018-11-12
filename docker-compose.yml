@@ -16,3 +16,10 @@ services:
       - workDir /home/jenkins/agent
       - <secret>
       - <agent name>
+    built:
+      arg:
+      - url  
+      - https://jenkins.server:5000
+      - workDir /home/jenkins/agent
+      - <secret>
+      - <agent name>
