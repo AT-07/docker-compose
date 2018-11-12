@@ -11,7 +11,7 @@ services:
   jenkins_server:
     image: "registry.jala.info/devops/jenkins/jnlp-slave:3.27-1-alpine"
     arg:
-      - -url  
+      - url  
       - https://jenkins.server:5000
       - workDir /home/jenkins/agent
       - <secret>
